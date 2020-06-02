@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#6200EE</color>
+    <color name="colorPrimaryDark">#3700B3</color>
+    <color name="colorAccent">#03DAC5</color>
+    <color name="colorLineE5E5E5">#E5E5E5</color>
+
+    <!-- 백그라운드 컬러 -->
+    <color name="colorBgTabLayoutMain">#1d1d1d</color>
+    <color name="colorBgBackword">#e9edf0</color>
+    <color name="colorBgHomeHeader">#F1F5F8</color>
+    <color name="colorBgHomeService">#E9EDF0</color>
+    <color name="colorCD2228">#CD2228</color>
+    <color name="colorBgConditionInfo">#f1f1f1</color>
+    <color name="colorBgConditionEdit">#f7f7f7</color>
+    <color name="colorBgImageSlideContainer">#342626</color>
+    <color name="light_gray">#d3d3d3</color>
+
+    <!-- 텍스트 컬러-->
+    <color name="colorTextTablayoutMain">#a5a5a5</color>
+    <color name="colorTextHomeServiceStorage">#1F1F1F</color>
+    <color name="colorTextHomeServiceFavorite">#4F4F4F</color>
+    <color name="colorTextNoticeDate">#969696</color>
+    <color name="colorTextBasicListTitle">#1F1F1F</color>
+    <color name="colorTextTabConditionSelectOn">#1F1F1F</color>
+    <color name="colorTextTabConditionSelectOff">#a8a8a8</color>
+    <color name="colorTextItemCodeList">#8c8c8c</color>
+    <color name="colorTextTableHeader">#202020</color>
+    <color name="colorTextTableDiscriptionBasic">#999999</color>
+    <color name="colorTextTableDiscriptionRed">@color/colorPrimary</color>
+    <color name="colorTextTableDiscriptionBold">#6c6c6c</color>
+    <color name="colorText777777">#777777</color>
+</resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:layout_gravity="center_vertical|center_horizontal">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="50dp"
+            android:src="@mipmap/logo"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.506" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="사용동의테스트화면"
+            android:textSize="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginBottom="30dp"/>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="3dp">
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/join_check_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="MAC 정보 수집동의"
+                android:onClick="onCheckboxClicked"
+                android:textSize="@dimen/text_small"
+                >
+            </androidx.appcompat.widget.AppCompatCheckBox>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:padding="3dp">
+
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/join_check_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="이용약관 동의"
+                android:onClick="onCheckboxClicked"
+                android:textSize="@dimen/text_small"
+                >
+            </androidx.appcompat.widget.AppCompatCheckBox>
+        </RelativeLayout>
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/light_gray"
+            >
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:padding="3dp">
+            <androidx.appcompat.widget.AppCompatCheckBox
+                android:id="@+id/join_check_all"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                android:text="모두 동의"
+                android:onClick="onCheckboxClicked"
+                android:textSize="@dimen/text_small"
+                >
+            </androidx.appcompat.widget.AppCompatCheckBox>
+        </RelativeLayout>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="50dp"
+            android:id="@+id/bt_join"
+            android:background="@drawable/button_bg_rounded_corners"
+            android:layout_gravity="center_horizontal"
+            android:textColor="@color/colorText777777"
+            android:text="가입요"/>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

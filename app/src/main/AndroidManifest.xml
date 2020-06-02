@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.myapplication"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <application
+        android:name=".BaseApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Activity.JoinActivity"
+            android:label="@string/title_activity_join"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".Activity.BaseActivity" />
+        <activity
+            android:name=".Activity.IntroActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Activity.LogoutActivity"
+            android:launchMode="singleTop"
+            android:theme="@android:style/Theme.Dialog" />
+        <activity
+            android:name=".Activity.MainActivity"
+            android:label="@string/app_name"
+            android:launchMode="singleInstance"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity> <!-- <activity android:name=".Activity.IntroActivity"/> -->
+        <activity
+            android:name=".Activity.Detail_View_Activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
+        <service
+            android:name="org.altbeacon.beacon.service.BeaconService"
+            tools:node="replace">
+            <meta-data
+                android:name="longScanForcingEnabled"
+                android:value="true" />
+        </service>
+    </application>
+
+    <permission
+        android:name="com.example.myapplication.permission.into_region"
+        android:description="@string/txt_reg_permit1"
+        android:label="@string/title_reg_permit1"
+        android:permissionGroup="android.permission-group.CAMERA"
+        android:protectionLevel="normal" />
+    <uses-feature
+        android:name="android.hardware.bluetooth_le"
+        android:required="true" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-permission android:name="com.example.myapplication.permission.into_region" />
+
+</manifest>

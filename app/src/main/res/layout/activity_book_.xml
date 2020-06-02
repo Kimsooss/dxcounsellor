@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.Detail_View_Activity"
+    android:background="#fcfcfc">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txttitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book Title"
+                android:layout_marginBottom="@dimen/activity_horizontal_margin"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:layout_height="1dp"
+                android:background="@color/colorLineE5E5E5" />
+            <LinearLayout android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/txtCat"
+                    android:layout_gravity="right"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="45dp"
+                    android:text="Category"
+                    android:padding="8dp"
+                    android:background="@drawable/layout"
+                    android:layout_marginTop="10dp"/>
+
+            </LinearLayout>
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+                android:background="#2d2d2d"
+                android:id="@+id/bookthumbnail"
+                android:visibility="gone"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/txtDesc"
+                android:textSize="18sp"
+                android:background="@drawable/layout"
+                android:layout_marginTop="10dp"
+                android:layout_width="match_parent"
+                android:padding="400dp"
+                android:layout_height="match_parent"
+                android:text="테스트 입니다"/>
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/replyView"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingTop="1dp"
+                android:divider="#00FF00"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>
